@@ -48,9 +48,6 @@ To run this project on your local machine:
    ```bash
    python manage.py runserver
    ```
-7. **Access the app:**
-   Open `http://127.0.0.1:8000/` in your browser.
-
 ## Future Enhancements
 - Implement user authentication & authorization.
 - Add an API using Django REST Framework.
