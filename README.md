@@ -18,7 +18,7 @@ Through this project, I am gaining hands-on experience with:
 - **PostgreSQL Database:** Connecting Django with PostgreSQL for efficient data storage.
 - **Admin Panel Customization:** Enhancing Django’s admin panel for better record management.
 - **ASGI vs WSGI:** Learning the difference between synchronous and asynchronous Django applications.
-- **Static & Media Files:** Managing CSS, JavaScript, and images in Django projects.
+
 
 ## Setup & Installation
 To run this project on your local machine:
