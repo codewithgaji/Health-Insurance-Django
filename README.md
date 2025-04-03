@@ -48,10 +48,7 @@ To run this project on your local machine:
    ```bash
    python manage.py runserver
    ```
-## Future Enhancements
-- Implement user authentication & authorization.
-- Add an API using Django REST Framework.
-- Enhance UI with Bootstrap or TailwindCSS.
+
 
 ## Contributing
 If you’d like to contribute, feel free to fork the repository and create a pull request!
