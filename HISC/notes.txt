@@ -1,0 +1,27 @@
+# This is how Django works 
+
+manage.py ----> settings.py --> main app urls.py -->
+any app urls.py --> views ---> models ---> data from database
+
+ ------- then render the data into html pages
+
+ # This is how URL Dispatcher works
+ -- All display content ----> id, name, slug
+ -- Navigating to one page ---> views
+ -- Showing data to respective pages
+
+
+all patients html ---> html ---> urls ---> views --->patient details html
+
+Model Queries learnt so far:
+    all()
+    order_by()
+    filter()
+    aggregate() - max, min, sum e.t.c
+    exclude()
+    get()
+    count()
+
+
+
+
