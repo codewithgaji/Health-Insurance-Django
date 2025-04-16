@@ -4,7 +4,7 @@ from hospital.models import Hospital
 from patient.models import Patient
 from django.db.models import Q
 from django.db.models import Avg, Max, Min, Sum
-from .forms import Contactform
+from .forms import Contactform, ContactModelForm
 # Create your views here.
 
 # This is the view
@@ -61,10 +61,29 @@ def contactView(request):
         if form.is_valid():
             return HttpResponse("Your data is submitted")
         
-    else:
+    else:                                                                                                                                                                       
         form = Contactform()
 
     context = {
         'form_key': form
     }
-    return render(request, "contact.html", context)       
+    return render(request, "contact.html", context)  
+
+
+
+def ContactModelFormView(request):
+    if request.method == 'POST':
+        form = ContactModelForm(request.POST) # You call an instance of the code, not the class itself
+        if form.is_valid():
+            # Save data into DB table
+            form.save()
+            return HttpResponse("Your data has been successfully submitted")
+        
+    else:
+        form = ContactModelForm()
+
+    context = {
+        'model_form_key': form
+    }
+
+    return render(request, 'contactmodel.html', context)
