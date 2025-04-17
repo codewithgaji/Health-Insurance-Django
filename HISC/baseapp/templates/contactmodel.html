@@ -27,8 +27,8 @@
       <form method="POST">
         {% csrf_token %}
         {{model_form_key.as_p}} <!--The 'as_p' is used to arrange the form Vertically-->                                                                                                                                          
-        <input type="submit" value="Submit" class="btn btn-outline-success"> <!--This just validates the data and isn't submitting the data to a database-->
-        <input type="reset" value="clear" class="btn btn-outline-success"
+        <input type="submit" value="Submit" class="bg-dark text-white btn-group-vertical"> <!--This just validates the data and isn't submitting the data to a database-->
+        <input type="reset" value="clear" class="bg-warning text-white btn-group-vertical">
       </form>
 
 
