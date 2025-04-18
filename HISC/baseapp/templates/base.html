@@ -54,11 +54,6 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="{% url 'AllQueries' %}"
-              >Model Queries</a
-            >
-          </li>                                                                                                                                                             
-          <li class="nav-item">
             <a class="nav-link text-white" href="{% url 'Insurance_Companies'%}"
               >Insurance Companies</a
             >
@@ -69,25 +64,27 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="{% url 'ContactModelurl' %}"
-              >Contact With DB</a
-            >
-          </li>                                                                                                                                                                             
-          <li class="nav-item">
-            <a class="nav-link text-white" href="{% url 'contact' %}"
-              >Contacts</a
-            >
-          </li>
-          <li class="nav-item">
             <a class="nav-link text-white" href="#">Staff</a>
           </li>
           <li class="nav-item">
-            <!-- The 'admin:index' is used to access the Admin screen -->
-            <a class="nav-link text-white" href="{% url 'admin:index' %}"
-              >Admin</a
-            >
+            <a class="nav-link text-white" href="{% url 'signup' %}">New User</a>
           </li>
-        </ul>
+             
+             
+
+          <div class="dropdown bg-dark">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Others
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="{% url 'AllQueries' %}">Model Queries</a>
+              <a class="dropdown-item" href="{% url 'ContactModelurl' %}">Contact With DB</a>
+              <a class="dropdown-item" href="{% url 'admin:index' %}">Admin Page</a>
+              <a class="dropdown-item" href="{% url 'contact' %}">Contact Page</a>
+            </div>
+          </div>
+
+
       </div>
     </nav>
     <div class="container">

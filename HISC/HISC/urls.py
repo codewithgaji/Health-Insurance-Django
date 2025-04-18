@@ -21,12 +21,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('baseapp.urls')),
+    path('',include('baseapp.urls')),                                                                                                                                                                   
     path('Hospitals/', include('hospital.urls')),
     path('patient/', include('patient.urls')),
     path('claims/', include('claims.urls')),
     path('insurancecompany/', include('insurancecompany.urls')),
-
+    path("Users/", include('user.urls')),
 ]
 
 # ✅ This serves media files during development
