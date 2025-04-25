@@ -10,7 +10,7 @@ def signupview(request):
       signform.save()
       
   else:
-     form = signform()
+     signform = Signup()
 
   context = {
     'signform_key': signform
