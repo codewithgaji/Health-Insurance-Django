@@ -35,5 +35,5 @@ class Signup(forms.ModelForm):
 
 
   class Meta:
-    model = User                                                                                                                                                                      
+    model = User # This is not "Signup" because "User" is an actual inbuilt Django Form                                                                                                                                                               
     fields = ['username', 'first_name', 'last_name', 'email', 'password',]
