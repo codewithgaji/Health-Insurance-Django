@@ -30,17 +30,4 @@ Through this project, I am gaining hands-on experience with:
 
 ---
 
-## ⚙️ Setup & Installation
 
-Follow the steps below to run this project on your local machine:
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourusername/health-insurance-claim.git
-cd health-insurance-claim
-
-### 2. Create a Virtual Environment
-```bash
-python -m venv venv
-venv\Scripts\activate  # On Windows
-# Or use source venv/bin/activate on Mac/Linux
